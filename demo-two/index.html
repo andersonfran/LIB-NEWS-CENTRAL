@@ -103,7 +103,7 @@
                             <i class="unicon-search icon-1"></i>
                         </span>
                     </form>
-                    <ul class="nav-y gap-narrow fw-bold fs-5" data-uc-nav>
+                    <ul class="nav-y custom_font fw-bold fs-5" data-uc-nav>
                         <li class="uc-parent">
                             <a href="#">Homepages</a>
                             <ul class="uc-nav-sub" data-uc-nav="">
@@ -486,7 +486,7 @@
 
         <!--  GDPR modal -->
         <div id="uc-gdpr-notification" class="uc-gdpr-notification uc-notification uc-notification-bottom-left lg:m-2">
-            <div class="uc-notification-message">
+            <div class="uc-notification-message custom_font">
                 <a id="uc-close-gdpr-notification" class="uc-notification-close" data-uc-close></a>
                 <h2 class="h5 ft-primary fw-bold -ls-1 m-0">GDPR Compliance</h2>
                 <p class="fs-7 mt-1 mb-2">We use cookies to ensure you get the best experience on our website. By continuing to use our site, you accept our use of cookies, <a href="page-privacy.html" class="uc-link text-underline">Privacy Policy</a>, and <a href="page-terms.html" class="uc-link text-underline">Terms of Service</a>.</p>
@@ -512,7 +512,7 @@
         <header class="uc-header header-two uc-navbar-sticky-wrap z-999" data-uc-sticky="sel-target: .uc-navbar-container; cls-active: uc-navbar-sticky; cls-inactive: uc-navbar-transparent; end: !*;">
             <nav class="uc-navbar-container shadow-xs bg-white dark:bg-gray-900 fs-6 z-1">
                 <div class="uc-center-navbar panel z-2">
-                    <div class="container max-w-xl">
+                    <div class="container custom_font max-w-xl">
                         <div class="uc-navbar min-h-72px lg:min-h-100px text-gray-900 dark:text-white" data-uc-navbar=" animation: uc-animation-slide-top-small; duration: 150;">
                             <div class="uc-navbar-left">
                                 <div>
@@ -526,24 +526,34 @@
                                     </a>
                                 </div>
                             </div>
-                            <div class="uc-navbar-right">
-                                <div class="uc-navbar-item">
-                                    <a class="uc-account-trigger btn btn-sm gap-narrow border-0 p-0 duration-0 dark:text-white" href="#uc-favorites-modal" data-uc-toggle>
-                                        <i class="icon icon-1 fw-medium unicon-bookmark"></i>
-                                        <span class="cstack w-24px h-24px bg-primary text-black fs-7 rounded-circle">0</span>
+                            <div class="uc-navbar-right gap-2 lg:gap-3">
+                                <div class="uc-navbar-item d-inline-flex lg:d-none">
+                                    <a class="btn btn-xs gap-narrow ps-1 border rounded-pill fw-bold dark:text-white hover:bg-gray-25 dark:hover:bg-gray-900" href="#live_now" data-uc-scroll="offset: 128">
+                                        <i class="icon icon-narrow unicon-dot-mark text-red" data-uc-animate="flash"></i>
+                                        <span>Live</span>
                                     </a>
                                 </div>
-                                <ul class="nav-x gap-1 d-none lg:d-flex">
-                                    <li>
-                                        <a href="#tw" class="w-32px h-32px cstack border rounded-circle hover:bg-gray-25 transition-colors duration-200"><i class="icon icon-1 unicon-logo-facebook"></i></a>
-                                    </li>
-                                    <li>
-                                        <a href="#in" class="w-32px h-32px cstack border rounded-circle hover:bg-gray-25 transition-colors duration-200"><i class="icon icon-1 unicon-logo-instagram"></i></a>
-                                    </li>
-                                    <li>
-                                        <a href="#yt" class="w-32px h-32px cstack border rounded-circle hover:bg-gray-25 transition-colors duration-200"><i class="icon icon-1 unicon-logo-youtube"></i></a>
-                                    </li>
-                                </ul>
+                               
+                                <div class="uc-navbar-item d-none lg:d-inline-flex">
+                                    <a class="uc-account-trigger position-relative btn btn-sm border-0 p-0 gap-narrow duration-0 dark:text-white" href="#uc-account-modal" data-uc-toggle>
+                                        <i class="icon icon-2 fw-medium unicon-user-avatar"></i>
+                                    </a>
+                                </div>
+                                <div class="uc-navbar-item d-none lg:d-inline-flex">
+                                    <a class="uc-search-trigger cstack text-none text-dark dark:text-white" href="#uc-search-modal" data-uc-toggle>
+                                        <i class="icon icon-2 fw-medium unicon-search"></i>
+                                    </a>
+                                </div>
+                                <div class="uc-navbar-item d-none lg:d-inline-flex">
+                                    <div class="uc-modes-trigger btn btn-xs w-32px h-32px p-0 border fw-normal rounded-circle dark:text-white hover:bg-gray-25 dark:hover:bg-gray-900" data-darkmode-toggle="">
+                                        <label class="switch">
+                                            <i class="icon icon-2 fw-medium unicon-light"></i>
+                                            <span class="sr-only">Dark toggle</span>
+                                            <input type="checkbox">
+                                            <span class="slider"></span>
+                                        </label>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -561,7 +571,7 @@
                             <div class="uc-navbar-center gap-2 lg:gap-3">
                                 <div class="uc-navbar-item" style="--uc-nav-height: 48px">
                                     <ul class="nav-x fw-semibold custom_font flex-nowrap overflow-x-auto hide-scrollbar uc-horizontal-scroll w-screen md:w-auto md:mask-end-0 mx-n2 px-2 text-white">
-                                        <li class="uc-active custom_font"><a href="#">Home</a></li>
+                                        <li class="uc-active"><a href="#">Home</a></li>
                                         <li><a href="#">Social</a></li>
                                         <li><a href="#">Politics</a></li>
                                         <li><a href="#">Economy</a></li>
@@ -599,7 +609,7 @@
         <!-- Header end -->
 
         <!-- Wrapper start -->
-        <div id="wrapper" class="wrap overflow-hidden-x">
+        <div id="wrapper" class="wrap custom_font overflow-hidden-x">
 
             <!-- Section start -->
             <div class="section panel overflow-hidden">
@@ -2467,7 +2477,7 @@
         <!-- Wrapper end -->
 
         <!-- Footer start -->
-        <footer id="uc-footer" class="uc-footer panel uc-dark">
+        <footer id="uc-footer" class="uc-footer panel custom_font uc-dark">
             <div class="footer-outer py-4 lg:py-6 bg-gray-300 bg-opacity-10 dark:bg-gray-800 dark:bg-opacity-100">
                 <div class="container max-w-xl">
                     <div class="footer-inner vstack gap-4 lg:gap-6">
